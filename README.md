@@ -27,7 +27,7 @@ the philosophy behind EdgeDB.
 The data schema in EdgeDB is a clean high-level representation of a conceptual
 data model:
 
-```
+```sql
 type User {
     required property name -> str;
 }
@@ -72,7 +72,7 @@ to learn.
 EdgeQL supports fetching object hierarchies with arbitrary level of nesting,
 filtering, sorting and aggregation:
 
-```
+```sql
 SELECT User {
     id,
     name,
